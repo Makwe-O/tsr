@@ -9,3 +9,7 @@ export interface FetchTodoAction {
   type: ActionTypes.FETCH_TODOS;
   payload: TodoData[];
 }
+
+export interface StoreState {
+  todos: TodoData[];
+}

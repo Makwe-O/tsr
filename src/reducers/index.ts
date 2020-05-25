@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import todoReducer from './todoReducer';
-const rootReducer = combineReducers({
+import { StoreState } from '../interfaces';
+const rootReducer = combineReducers<StoreState>({
   todos: todoReducer,
 });
 
