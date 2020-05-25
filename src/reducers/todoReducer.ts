@@ -7,10 +7,7 @@ const todoReducer = (
 ) => {
   switch (action.type) {
     case ActionTypes.FETCH_TODOS:
-      return {
-        ...state,
-        ...action.payload,
-      };
+      return [...state, ...action.payload];
 
     default:
       return state;
